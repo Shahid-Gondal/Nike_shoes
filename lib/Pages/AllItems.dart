@@ -100,7 +100,7 @@ class Allitems extends StatelessWidget {
                     product[i]["ProductDiscription"],
                     style: TextStyle(
                       color: Color(0xFF475269),
-                      fontSize: 15,
+                      fontSize: 16,
                     ),
                   ),
                 ),
