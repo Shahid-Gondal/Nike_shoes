@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shoseapp/HomePage.dart';
 import 'package:shoseapp/Pages/LoginPage.dart';
+import 'package:shoseapp/Pages/profile.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xFFCEDDEE)
       ),
-      home: const Loginpage(),
+      home: const Profile(),
     );
   }
 }

@@ -72,10 +72,10 @@ class Allitems extends StatelessWidget {
                         ));
                   },
                   child: Padding(
-                    padding: const EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(5),
                     child: Image.asset(
                       product[i]["image"],
-                      height: 130,
+                      height: 120,
                       width: 130,
                     ),
                   ),
