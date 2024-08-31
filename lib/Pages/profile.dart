@@ -56,9 +56,7 @@ class Profile extends StatelessWidget {
                 width: 200,
                 child: ElevatedButton(
                   style: ButtonStyle(
-
-                    shadowColor: WidgetStatePropertyAll(Colors.black),
-                      
+                      shadowColor: WidgetStatePropertyAll(Colors.black),
                       backgroundColor: WidgetStatePropertyAll(Colors.black)),
                   onPressed: () {},
                   child: Text(
@@ -240,6 +238,34 @@ class Profile extends StatelessWidget {
                     ),
                   ),
                   trailing: Icon(Icons.arrow_forward_ios_sharp),
+                ),
+              ),
+              ElevatedButton(
+                style: ButtonStyle(
+                  shape: WidgetStatePropertyAll(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  fixedSize: WidgetStatePropertyAll(
+                    Size(130, 20),
+                  ),
+                  backgroundColor: WidgetStatePropertyAll(Colors.redAccent),
+                ),
+                onPressed: () {},
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      Icons.logout,
+                      color: Colors.black,
+                    ),
+                    Text(
+                      "Logout",
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.bold),
+                    )
+                  ],
                 ),
               ),
             ],
